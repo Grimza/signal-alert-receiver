@@ -1,0 +1,17 @@
+[package]
+name = "signal-alert-receiver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serialport = "4.9.0"
+rodio = "0.22.2"
+windows = { version = "0.62.2", features = [
+    "Win32_Media_Audio",
+    "Win32_Media_Audio_Endpoints",
+    "Win32_System_Com",
+    "Win32_Foundation"
+] }
+tray-icon = "0.22.0"
+winit = "0.30.13"
+image = "0.25.10"
